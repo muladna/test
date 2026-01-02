@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>阿琴肉店 - 50年在地溫體豬專家</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Inter 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* 使用 Noto Sans TC 作為中文字體，Inter 作為英數字體 */
+      body {
+        font-family: "Inter", "Noto Sans TC", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- 導覽列 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="">
+          <img src="image/logo-h.png" alt="阿琴肉店 Logo" class="h-14" />
+        </a>
+        <div class="space-x-4 hidden md:block">
+          <a href="#about" class="text-gray-600 hover:text-red-700">關於我們</a>
+          <a href="#quality" class="text-gray-600 hover:text-red-700"
+            >品質保證</a
+          >
+          <a href="#location" class="text-gray-600 hover:text-red-700"
+            >攤位位置</a
+          >
+          <a href="#seasonal" class="text-gray-600 hover:text-red-700"
+            >年節限定</a
+          >
+        </div>
+        <!-- 手機版選單按鈕 (簡易) --><button
+          id="mobile-menu-btn"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <!-- 手機版下拉選單 -->
+      <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
+        <a href="#about" class="block text-gray-600 hover:text-red-700"
+          >關於我們</a
+        >
+        <a href="#quality" class="block text-gray-600 hover:text-red-700"
+          >品質保證</a
+        >
+        <a href="#location" class="block text-gray-600 hover:text-red-700"
+          >攤位位置</a
+        >
+        <a href="#seasonal" class="block text-gray-600 hover:text-red-700"
+          >年節限定</a
+        >
+      </div>
+    </header>
+
+    <!-- 主內容 -->
+    <main>
+      <!-- Hero 區域 -->
+      <section
+        class="bg-red-800 text-white relative h-[50vh] min-h-[300px] flex items-center justify-center text-center overflow-hidden"
+      >
+        <div class="relative z-10 p-6">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4"><br />五十年堅持</h1>
+          <p class="text-xl md:text-2xl font-light">
+            每日最新鮮，最安心的溫體豬肉
+          </p>
+          <br />
+          <img
+            src="image/certifation.png"
+            alt="本店使用台灣豬"
+            width="200"
+            height="200"
+            class="mx-auto"
+          /><br />
+        </div>
+      </section>
+
+      <!-- Sectin Start -->
+      <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold text-red-800 mb-6">
+            關於我們：50年在地老店
+          </h2>
+          <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+            半世紀時光醞釀，自民國64年飄香至今。阿琴豬肉從早年市場的親切攤位，到如今店面的溫暖燈光，
+          </p>
+          <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+            變的是時代容顏，不變的是二代人掌心傳承的品質印記，以及用真心溫潤的鄰里情誼。
+          </p>
+          <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+            我們用時光熬煮人情，以匠心守護傳統，讓每塊豬肉都承載著街坊記憶的溫度。
+          </p>
+          <!-- 示意圖 - 電影膠卷風格 -->
+          <div class="mt-12 w-full max-w-4xl mx-auto">
+            <!-- 膠卷容器 -->
+            <div
+              class="p-3 rounded-lg shadow-lg relative overflow-hidden"
+              style="background-color: #d9b3b3"
+            >
+              <!-- 頂部孔洞 -->
+              <div class="grid grid-cols-12 gap-x-2 md:gap-x-3 mb-2 px-1">
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+              </div>
+
+              <!-- 圖片框 (可水平滾動) -->
+              <!-- 核心修正：
+             1. 移除 overflow-x-auto，讓 flex 容器內的元素自動填滿。
+             2. 圖片容器使用 flex-grow 和 basis-0，使其均分寬度。
+             3. 圖片移除 object-cover 和 h- (高度)，讓高度自動依循寬高比。
+        -->
+              <div class="flex gap-3 pb-2">
+                <!-- 圖片 1 -->
+                <div class="flex-grow basis-0 bg-gray-200 rounded">
+                  <img
+                    src="image/h1.webp"
+                    alt="[第一代攤位示意圖]"
+                    class="w-full rounded-sm"
+                    onerror="this.src='https://placehold.co/240x160/cccccc/777777?text=照片+1';"
+                  />
+                </div>
+                <!-- 圖片 2 -->
+                <div class="flex-grow basis-0 bg-gray-200 rounded">
+                  <img
+                    src="image/h2.webp"
+                    alt="[市場老照片示意圖]"
+                    class="w-full rounded-sm"
+                    onerror="this.src='https://placehold.co/240x160/cccccc/777777?text=照片+2';"
+                  />
+                </div>
+                <!-- 圖片 3 -->
+                <div class="flex-grow basis-0 bg-gray-200 rounded">
+                  <img
+                    src="image/h3.webp"
+                    alt="[家族合影示意圖]"
+                    class="w-full rounded-sm"
+                    onerror="this.src='https://placehold.co/240x160/cccccc/777777?text=照片+3';"
+                  />
+                </div>
+              </div>
+
+              <!-- 底部孔洞 -->
+              <div class="grid grid-cols-12 gap-x-2 md:gap-x-3 mt-2 px-1">
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+                <span class="h-3 bg-gray-100 rounded-sm"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 品質保證 (安全認證) -->
+
+      <section id="quality" class="py-16 md:py-24 bg-[#FFF3EE]">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-red-800 mb-12">
+            我們的堅持：安全、衛生、新鮮
+          </h2>
+
+          <div class="grid md:grid-cols-3 gap-8 text-center">
+            <!-- 特色一 -->
+
+            <div
+              class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="image/icon1.webp"
+                alt="安全認證圖示"
+                class="w-28 h-28 mx-auto mb-4"
+                onerror="this.src='https://placehold.co/80x80/fecaca/b91c1c?text=Icon+1';"
+              />
+
+              <h3 class="text-xl font-semibold mb-2">安全認證豬隻</h3>
+
+              <p class="text-gray-600">
+                豬肉來源均有明確標示，擁有合格電宰證明與安全認證
+                (例如：CAS或產銷履歷)，絕不使用來路不明的豬隻。
+              </p>
+            </div>
+
+            <!-- 特色二 -->
+
+            <div
+              class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            >
+              <!-- Icon (已替換為圖片) -->
+
+              <img
+                src="image/icon2.webp"
+                alt="當日直送圖示"
+                class="w-28 h-28 mx-auto mb-4"
+              />
+
+              <h3 class="text-xl font-semibold mb-2">當日溫體直送</h3>
+
+              <p class="text-gray-600">
+                堅持販售當日屠宰的溫體豬肉，清晨直送攤位，確保您買到的每一塊肉都是最新鮮的。
+              </p>
+            </div>
+
+            <!-- 特色三 -->
+
+            <div
+              class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            >
+              <img
+                src="image/icon3.webp"
+                alt="衛生管理圖示"
+                class="w-28 h-28 mx-auto mb-4"
+                onerror="this.src='https://placehold.co/80x80/fecaca/b91c1c?text=Icon+3';"
+              />
+
+              <h3 class="text-xl font-semibold mb-2">衛生環境管理</h3>
+              content: |
+              <p class="text-gray-600">
+                攤位每日嚴格清潔消毒，保持檯面與刀具衛生，符合市場衛生管理標準，讓您買得放心。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 攤位位置 -->
+      <section id="location" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-red-800 mb-12">
+            來這裡找我們
+          </h2>
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- 地圖區域 -->
+            <div
+              class="w-full h-80 md:h-96 rounded-lg shadow-lg overflow-hidden"
+            >
+              <!-- 嵌入 Google 地圖 (使用 iframe) --><!-- 請替換成您的實際地址 --><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.076616462376!2d121.5270259!3d25.0653304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a964a340156d%3A0xc715201000b0f797!2zMTA0OTHlj7DljJflsIbmspPkuK3oifHljYDkvZnkupvjtr7nrrY3lvZfjv7fooZcyNOiZn-WMuQ!5e0!3m2!1szh-TW!2stw!4v1730263333333!5m2!1szh-TW!2stw"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+            <!-- 地址與時間 -->
+            <div class="text-lg">
+              <h3 class="text-2xl font-semibold mb-4">阿琴豬肉</h3>
+              <p class="text-gray-700 mb-3">
+                <strong>地址：</strong> 10491 臺北市中山區農安街77巷9弄52號
+              </p>
+              <p class="text-gray-700 mb-3">
+                <strong>電話：</strong>(02)-2596-0187, 09-3565-0577,
+                09-5303-1989
+              </p>
+              <p class="text-gray-700 mb-6">
+                <strong>營業時間：</strong> 每日 06:00 - 17:00 (週一公休)
+              </p>
+              <a
+                href="https://www.google.com/maps/place/10491%E8%87%BA%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E8%BE%B2%E5%AE%89%E8%A1%9777%E5%B7%B79%E5%BC%8452%E8%99%9F/@25.0661144,121.5271904,1087m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3442a95a74c30a33:0xbafad4026706df73!8m2!3d25.0661144!4d121.5297653!16s%2Fg%2F11c2h_0g5w?entry=ttu&g_ep=EgoyMDI1MTAyNi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block bg-red-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-red-800 transition-colors duration-300"
+              >
+                查看 Google 地圖
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 年節限定 -->
+      <section
+        id="seasonal"
+        class="py-16 md:py-24"
+        style="background-color: #d9b3b3"
+      >
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-red-800 mb-12">
+            阿嬷的手路菜 ‧ 限量美味
+          </h2>
+          <div class="w-full">
+            <img
+              src="image/ama.png"
+              alt="阿琴"
+              width="280"
+              height="280"
+              class="mx-auto"
+              onerror="this.src='https://placehold.co/280x280/d9b3b3/b91c1c?text=阿琴';"
+            /><br />
+          </div>
+
+          <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
+            除了每日新鮮的豬肉，我們還會不定期推出傳承多年的手路菜。<br />純手工製作，數量有限，歡迎提早預訂！
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- 產品一：香腸 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
+            >
+              <img
+                src="image/sausage.webp"
+                alt="[古早味高粱香腸]"
+                class="w-full md:w-1/2 h-64 md:h-auto object-cover"
+                onerror="this.src='https://placehold.co/300x300/cccccc/777777?text=手工香腸';"
+              />
+              <div class="p-6 flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold mb-3">古早味高粱香腸</h3>
+                <p class="text-gray-600 mb-4">
+                  傳承阿嬤秘方，嚴選台灣黑豬後腿肉，拌入 53 度高粱酒醃製 48
+                  小時，炭火慢烤鎖住酒香與肉汁。一咬爆汁、滿嘴古早味，過年過節必備！
+                </p>
+                <span class="font-semibold text-red-700"
+                  >推出時間：不定期推出</span
+                >
+              </div>
+            </div>
+            <!-- 產品二：粽子 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
+            >
+              <img
+                src="image/meatzong.webp"
+                alt="[台北肉粽]"
+                class="w-full md:w-1/2 h-64 md:h-auto object-cover"
+                onerror="this.src='https://placehold.co/300x300/cccccc/777777?text=古早味肉粽';"
+              />
+              <div class="p-6 flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold mb-3">台北肉粽</h3>
+                <p class="text-gray-600 mb-4">
+                  北部粽經典！糯米吸飽醬油香，包入香菇、鹹蛋黃、滷肉與栗子，蒸籠蒸透後米粒晶瑩
+                  Q 彈。熱氣一掀，香氣撲鼻，端午節的回憶就在這一顆。
+                </p>
+                <span class="font-semibold text-red-700"
+                  >推出時間：端午節前</span
+                >
+              </div>
+            </div>
+
+            <!-- 產品三：原味滷肉 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
+            >
+              <img
+                src="image/meat.webp"
+                alt="[原味滷肉]"
+                class="w-full md:w-1/2 h-64 md:h-auto object-cover"
+                onerror="this.src='https://placehold.co/300x300/cccccc/777777?text=手工香腸';"
+              />
+              <div class="p-6 flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold mb-3">原味滷肉</h3>
+                <p class="text-gray-600 mb-4">
+                  慢火熬製 6
+                  小時，豬五花與獨門中藥包完美融合，肥瘦交錯、入口即化。淋在白飯上就是人間美味，簡單一碗滷肉飯，暖心又滿足。
+                </p>
+                <span class="font-semibold text-red-700"
+                  >推出時間：不定期推出</span
+                >
+              </div>
+            </div>
+            <!-- 產品四：本地黑元豬 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
+            >
+              <img
+                src="image/b-pork.webp"
+                alt="[本地黑毛豬]"
+                class="w-full md:w-1/2 h-64 md:h-auto object-cover"
+                onerror="this.src='https://placehold.co/300x300/cccccc/777777?text=古早味肉粽';"
+              />
+              <div class="p-6 flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold mb-3">本地黑毛豬</h3>
+                <p class="text-gray-600 mb-4">
+                  台灣本地一級黑毛豬，無抗生素、無瘦肉精，肉質緊實帶甘甜。無論火鍋、煎烤或滷製，都能吃出天然豬香，是健康餐桌的首選。
+                </p>
+                <span class="font-semibold text-red-700"
+                  >推出時間：不定期推出</span
+                >
+              </div>
+            </div>
+
+            <!-- 產品五：火鍋肉片 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
+            >
+              <img
+                src="image/meat-slices.webp"
+                alt="[火鍋肉片]"
+                class="w-full md:w-1/2 h-64 md:h-auto object-cover"
+                onerror="this.src='https://placehold.co/300x300/cccccc/777777?text=手工香腸';"
+              />
+              <div class="p-6 flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold mb-3">火鍋肉片</h3>
+                <p class="text-gray-600 mb-4">
+                  黑元豬梅花肉現切薄片，肥瘦黃金比例，涮鍋 5
+                  秒即熟，軟嫩多汁不柴。搭配特調沙茶醬或胡麻醬，冬天圍爐的必點幸福。
+                </p>
+                <span class="font-semibold text-red-700"
+                  >推出時間：不定期推出</span
+                >
+              </div>
+            </div>
+            <!-- 產品六：傳統胖皮 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
+            >
+              <img
+                src="image/pork-skin.webp"
+                alt="[傳統胖皮]"
+                class="w-full md:w-1/2 h-64 md:h-auto object-cover"
+                onerror="this.src='https://placehold.co/300x300/cccccc/777777?text=古早味肉粽';"
+              />
+              <div class="p-6 flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold mb-3">傳統胖皮</h3>
+                <p class="text-gray-600 mb-4">
+                  手工製作豬皮 Q
+                  彈，滷至透明入味，肥而不膩、膠質滿滿。冷盤切片直接吃，或炒高麗菜提味，都是下酒菜與拌飯神器！
+                </p>
+                <span class="font-semibold text-red-700"
+                  >推出時間：不定期推出</span
+                >
+              </div>
+            </div>
+            <!-- 產品七：季節性油飯 -->
+            <div
+              class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row"
+            >
+              <img
+                src="image/oily-rice.webp"
+                alt="[季節性油飯]"
+                class="w-full md:w-1/2 h-64 md:h-auto object-cover"
+                onerror="this.src='https://placehold.co/300x300/cccccc/777777?text=古早味肉粽';"
+              />
+              <div class="p-6 flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold mb-3">季節性油飯</h3>
+                <p class="text-gray-600 mb-4">
+                  限定冬季！糯米炒香後加入蝦米、香菇與豬肉丁，淋上豬大骨熬製油汁，蒸透油亮。每口都飽含古早滋味，限量供應，賣完不候。
+                </p>
+                <span class="font-semibold text-red-700"
+                  >推出時間：每季推出</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row justify-center items-start gap-8"
+      >
+        <!-- 左側：圖片 -->
+        <div>
+          <!-- 
+        修正：
+        將 "rounded-full" (圓形) 改為 "rounded-xl" (12px 圓角)，使其變為圓角方形。
+      -->
+          <img
+            src="image/logo-v.png"
+            alt="阿琴豬肉 Logo"
+            class="w-24 h-24 rounded-xl shadow-lg"
+            onerror="this.src='https://placehold.co/96x96/374151/e5e7eb?text=LOGO';"
+          />
+        </div>
+
+        <!-- 中間：聯絡資訊 -->
+        <!-- "text-center md:text-left"：手機上置中，桌機上靠左對齊 (靠近圖片) -->
+        <div class="text-center md:text-left">
+          <h3 class="text-2xl font-semibold text-white mb-4">
+            阿琴豬肉 - 50年溫體豬專家
+          </h3>
+          <p class="mb-2">台北市農安街77巷9弄52號</p>
+          <p class="mb-2">電話：(02)-2596-0187</p>
+          <p class="mb-4">手機：09-3565-0577, 09-5303-1989</p>
+          <p class="text-sm text-gray-400">&copy; 2025 阿琴豬肉 版權所有。</p>
+        </div>
+
+        <!-- 右側：新增的認證圖片 -->
+        <div>
+          <img
+            src="image/certify.webp"
+            alt="認證圖片"
+            class="w-32 rounded-xl shadow-lg"
+            onerror="this.src='https://placehold.co/128x128/374151/e5e7eb?text=Certify';"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- 簡易手機選單切換的 JavaScript -->
+    <script>
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+
+      // 點擊選單連結後自動關閉選單
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
